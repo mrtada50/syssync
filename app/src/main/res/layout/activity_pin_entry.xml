@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1E2124"
+    android:gravity="center_horizontal">
+
+    <!-- PIN Display Area -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <TextView
+            android:text="أدخل الرمز"
+            android:textColor="#AAAAAA"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:id="@+id/txtPin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp"
+            android:letterSpacing="0.3"
+            android:text="○○○○○○"/>
+
+        <TextView
+            android:id="@+id/txtError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF4444"
+            android:textSize="14sp"
+            android:layout_marginTop="16dp"
+            android:text=""/>
+    </LinearLayout>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#009688"/>
+
+    <!-- Numpad -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:padding="16dp">
+
+        <Button android:id="@+id/btn1" android:text="1" style="@style/PinButton"/>
+        <Button android:id="@+id/btn2" android:text="2" style="@style/PinButton"/>
+        <Button android:id="@+id/btn3" android:text="3" style="@style/PinButton"/>
+        <Button android:id="@+id/btn4" android:text="4" style="@style/PinButton"/>
+        <Button android:id="@+id/btn5" android:text="5" style="@style/PinButton"/>
+        <Button android:id="@+id/btn6" android:text="6" style="@style/PinButton"/>
+        <Button android:id="@+id/btn7" android:text="7" style="@style/PinButton"/>
+        <Button android:id="@+id/btn8" android:text="8" style="@style/PinButton"/>
+        <Button android:id="@+id/btn9" android:text="9" style="@style/PinButton"/>
+        <Button android:id="@+id/btnHelp" android:text="HELP" style="@style/PinButton"/>
+        <Button android:id="@+id/btn0" android:text="0" style="@style/PinButton"/>
+        <Button android:id="@+id/btnBackspace" android:text="⌫" style="@style/PinButton"/>
+
+    </GridLayout>
+
+</LinearLayout>

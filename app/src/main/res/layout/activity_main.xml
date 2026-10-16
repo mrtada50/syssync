@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E2124">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Title Row -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="🎵 Audio Manager"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:fontFamily="cursive"
+                android:longClickable="true" />
+
+            <ImageButton
+                android:id="@+id/btnSettings"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@android:drawable/ic_menu_manage"
+                android:background="#2A2D31"
+                android:tint="#AAAAAA"
+                android:padding="8dp" />
+        </RelativeLayout>
+
+        <!-- Alarm -->
+        <TextView android:id="@+id/lblAlarm" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textColor="#CCCCCC"
+            android:textSize="14sp" android:layout_marginBottom="4dp" android:text="Alarm: 0"/>
+        <SeekBar android:id="@+id/seekAlarm" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginBottom="20dp"
+            android:progressTint="#1DB954" android:thumbTint="#1DB954"/>
+
+        <!-- Music -->
+        <TextView android:id="@+id/lblMusic" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textColor="#CCCCCC"
+            android:textSize="14sp" android:layout_marginBottom="4dp" android:text="Music: 0"/>
+        <SeekBar android:id="@+id/seekMusic" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginBottom="20dp"
+            android:progressTint="#1DB954" android:thumbTint="#1DB954"/>
+
+        <!-- Notification -->
+        <TextView android:id="@+id/lblNotification" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textColor="#CCCCCC"
+            android:textSize="14sp" android:layout_marginBottom="4dp" android:text="Notification: 0"/>
+        <SeekBar android:id="@+id/seekNotification" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginBottom="20dp"
+            android:progressTint="#1DB954" android:thumbTint="#1DB954"/>
+
+        <!-- Ringer -->
+        <TextView android:id="@+id/lblRing" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textColor="#CCCCCC"
+            android:textSize="14sp" android:layout_marginBottom="4dp" android:text="Ringer: 0"/>
+        <SeekBar android:id="@+id/seekRing" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginBottom="20dp"
+            android:progressTint="#1DB954" android:thumbTint="#1DB954"/>
+
+        <!-- System -->
+        <TextView android:id="@+id/lblSystem" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textColor="#CCCCCC"
+            android:textSize="14sp" android:layout_marginBottom="4dp" android:text="System: 0"/>
+        <SeekBar android:id="@+id/seekSystem" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginBottom="20dp"
+            android:progressTint="#1DB954" android:thumbTint="#1DB954"/>
+
+        <!-- Voice Call -->
+        <TextView android:id="@+id/lblVoice" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textColor="#CCCCCC"
+            android:textSize="14sp" android:layout_marginBottom="4dp" android:text="Voice Call: 0"/>
+        <SeekBar android:id="@+id/seekVoice" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginBottom="20dp"
+            android:progressTint="#1DB954" android:thumbTint="#1DB954"/>
+
+    </LinearLayout>
+</ScrollView>
